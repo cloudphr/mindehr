@@ -6,21 +6,24 @@
 With this service, you can convert the mindmap based model to OpenEHR archetypes and templates automatically.
 
 ## Usage
+
 ### Prerequisites:
-- Install [Java 17](https://openjdk.java.net/projects/jdk/17/)
+
+-   Install [Java 17](https://openjdk.java.net/projects/jdk/17/)
 
 ### Get and Run the `jar` file
-- Download the release from [MinEHR released package](https://github.com/orgs/cloudphr/packages?repo_name=mindehr).
-- Run it on your server:
+
+-   Download the release from [MinEHR released package](https://github.com/orgs/cloudphr/packages?repo_name=mindehr).
+-   Run it on your server:
     ```shell
     java -jar mindehr-x.y.z-*********.jar
     ```
 
 ### Using the MindEHR service
-- Prepare your mindmap based model file with the rules of [Mindmap Specification of MindEHR](./Specification.md).
-- Open your browser and enter http://{*your-ip*}:8080, you can convert your xmind file to the OpenEHR archetypes and templates automatically.
-- Enjoy it!
 
+-   Prepare your mindmap based model file with the rules of [Mindmap Specification of MindEHR](./docs/Specification.md) and you may find a simple example [here](./docs/examples/small.xmind).
+-   Open your browser and enter http://{_your-ip_}:8080, you can convert your xmind file to the OpenEHR archetypes and templates automatically.
+-   Enjoy it!
 
 ## Development
 
@@ -30,22 +33,26 @@ We recommend using the `gradlew` script in the project to build it. The gradle w
 If you would prefer to build with the local gradle package, we recommend it with the 7.6.1 version, although other gradle versions should work.
 
 ### Prerequisites:
-- Install [Java 17](https://openjdk.java.net/projects/jdk/17/)
+
+-   Install [Java 17](https://openjdk.java.net/projects/jdk/17/)
 
 ### Clone this project:
-  ```shell
-  git clone https://github.com/cloudphr/mindehr.git
-  ```
+
+```shell
+git clone https://github.com/cloudphr/mindehr.git
+```
 
 ### Install the dependencies
-- Install the dependencies:
-  ```shell
-  ./gradlew clean dependencies
-  ```
+
+-   Install the dependencies:
+    ```shell
+    ./gradlew clean dependencies
+    ```
 
 ### Develop new features
-- The [github flow](https://guides.github.com/introduction/flow/) is recommended during the development.
-- Please write test cases for your new code.
+
+-   The [github flow](https://guides.github.com/introduction/flow/) is recommended during the development.
+-   Please write test cases for your new code.
 
 ### Test your added features
 
@@ -54,14 +61,15 @@ If you would prefer to build with the local gradle package, we recommend it with
 ```
 
 ### Boot your customized application
+
 ```shell
 ./gradlew bootRun
 ```
 
-### Using your customized OpenEHR.auto service
+### Using your customized MindEHR service
 
-- Open your browser and enter http://{*your-ip*}:8080, you can convert your xmind file to the OpenEHR archetypes and templates automatically.
-- Enjoy it!
+-   Open your browser and enter http://{_your-ip_}:8080, you can convert your xmind file to the OpenEHR archetypes and templates automatically.
+-   Enjoy it!
 
 ## Contributing
 
@@ -78,15 +86,14 @@ Contributions to this project are released to the public under the [project's op
 1. Push to your fork and [submit a pull request](https://github.com/cloudphr/mindehr/compare)
 1. Pat your self on the back and wait for your pull request to be reviewed and merged.
 
-
 Here are a few things you can do that will increase the likelihood of your pull request being accepted:
 
-- Follow the coding style used in this project. You can do this by running `./gradlew checkstyle`.
-- Keep your change as focused as possible. If there are multiple changes you would like to make that are not dependent upon each other, consider submitting them as separate pull requests.
-- Write [good commit messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).
+-   Follow the coding style used in this project. You can do this by running `./gradlew checkstyle`.
+-   Keep your change as focused as possible. If there are multiple changes you would like to make that are not dependent upon each other, consider submitting them as separate pull requests.
+-   Write [good commit messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).
 
 ### Resources
 
-- [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
-- [Using Pull Requests](https://help.github.com/articles/about-pull-requests/)
-- [GitHub Help](https://help.github.com)
+-   [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
+-   [Using Pull Requests](https://help.github.com/articles/about-pull-requests/)
+-   [GitHub Help](https://help.github.com)
