@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id></id>
+  <name>blank action</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+  </description>
+  <definition xsi:type="ACTION" archetype_id="">
+  </definition>
+</template>

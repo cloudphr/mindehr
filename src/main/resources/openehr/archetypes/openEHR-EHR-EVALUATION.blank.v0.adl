@@ -1,0 +1,91 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-EVALUATION.blank.v0
+
+concept
+	[at0000]	-- Blank
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["zh"] = <
+			language = <[ISO_639-1::zh]>
+			author = <
+				["name"] = <"?">
+			>
+		>
+	>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"*">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+		["zh"] = <
+			language = <[ISO_639-1::zh]>
+			purpose = <"*">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"9509D1D4D457E7C73D678958B3FDDB43">
+	>
+
+definition
+	EVALUATION[at0000] matches {	-- Blank
+		data matches {
+			ITEM_TREE[at0001] matches {	-- Tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {	-- New element
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Blank(zh)">
+					description = <"*unknown(zh)">
+				>
+				["at0001"] = <
+					text = <"*Tree(en)">
+					description = <"*@ internal @(en)">
+				>
+				["at0002"] = <
+					text = <"*New element(en)">
+					description = <"**(en)">
+				>
+			>
+		>
+		["zh"] = <
+			items = <
+				["at0000"] = <
+					text = <"Blank">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"New element">
+					description = <"*">
+				>
+			>
+		>
+	>

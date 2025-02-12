@@ -1,0 +1,55 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-SECTION.blank.v0
+
+concept
+	[at0000]	-- Blank
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"*">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+		["zh"] = <
+			language = <[ISO_639-1::zh]>
+			purpose = <"*">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"EFB8CB7D2DC6E2C87903FED05CE69035">
+	>
+
+definition
+	SECTION[at0000] matches {*}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Blank(zh)">
+					description = <"*unknown(zh)">
+				>
+			>
+		>
+		["zh"] = <
+			items = <
+				["at0000"] = <
+					text = <"Blank">
+					description = <"unknown">
+				>
+			>
+		>
+	>
