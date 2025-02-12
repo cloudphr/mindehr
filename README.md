@@ -13,7 +13,7 @@ With this service, you can convert the mindmap based model to OpenEHR archetypes
 
 ### Get and Run the `jar` file
 
--   Download the release from [MinEHR released package](https://github.com/orgs/cloudphr/packages?repo_name=mindehr).
+-   Download the release from [Release page](https://github.com/cloudphr/mindehr/releases) or from [MinEHR released packages](https://github.com/orgs/cloudphr/packages?repo_name=mindehr) for development.
 -   Run it on your server:
     ```shell
     java -jar mindehr-x.y.z-*********.jar
